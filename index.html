@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJAX Lecture</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    Synchronous VS Asynchronous
+    <div class="text-center">
+      <button class="btn btn-primary" onclick="makeMeDessert()">
+        Plz make me a dessert with then/catch
+      </button>
+    </div>
+    <br />
+    <div class="text-center">
+      <button class="btn btn-primary" onclick="makeMeDessertWithAwait()">
+        Plz make me a dessert With Await
+      </button>
+    </div>
+    <hr />
+    <div class="text-center">
+      <button class="btn btn-danger" onclick="fetchData()">
+        Fetch Data With Then/Catch
+      </button>
+    </div>
+    <br />
+    <div class="text-center">
+      <button class="btn btn-danger" onclick="fetchDataWithAwait()">
+        Fetch Data With Await
+      </button>
+    </div>
+    <script src="myScript.js"></script>
+  </body>
+</html>
