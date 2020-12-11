@@ -98,10 +98,14 @@ const fetchData = () => {
 
 // DOM manipulating function
 const renderTheData = (_data) => {
-  let myEle = document.createElement("p");
-  myEle.textContent = JSON.stringify(_data);
-  myEle.classList.add("text-primary");
+  let myEle = document.createElement("p"); // <p></p>
+  myEle.textContent = JSON.stringify(_data); //  <p>(_data)</p>
+  myEle.classList.add("text-primary"); // <p class="text-primary">(_data)</p>
   document.body.appendChild(myEle);
+  // <body>
+  // ...
+  // <p class="text-primary">(_data)</p>
+  // </body>
 };
 
 // REST API - representational state transfer (JSON transfer)
