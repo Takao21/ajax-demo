@@ -87,7 +87,7 @@ const fetchData = () => {
     .then((_data) => {
       // receives return value from previous .then block
       console.log(_data);
-      renderTheData();
+      renderTheData(_data);
     })
     .catch((err) => {
       // do this when fetch fails or ANY .then throws an exception
