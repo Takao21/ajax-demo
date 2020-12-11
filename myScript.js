@@ -16,7 +16,7 @@ const makeMeDessert = () => {
     })
     .catch((err) => {
       //  do this when promise failed or .then block threw an exception
-      console.error("An error occurred.");
+      console.error("An error occurred.", err);
       myDessert = "NO dessert";
       console.log("Yay, I got ", myDessert);
     });
